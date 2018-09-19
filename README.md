@@ -31,3 +31,16 @@ Output sample
   
 Problem solving  
 It is unrealistic to try to find the law and get a formula that uses the peanut matrix as an independent variable to solve this problem. The result can only be known. That is to go into the peanuts, every time you want to pick a peanut, calculate it, the rest of the time, enough to go to the peanut, pick, and walk back to the road from the peanut. If the time is enough, go to picking; if the time is not enough, the picking activity ends here.
+  
+Implementation skills  
+  
+It is natural to store information about peanuts in a two-dimensional array. However, using aField[0][0] or aField[1][1]
+Corresponding to the upper left corner of the peanut ground, it is worth thinking about. Since it takes 1 unit time from the ground to the road, the coordinates in the title all start from 1, so if aField[1][1] corresponds to the upper left corner of the peanut ground, then from aField[i][j] The time required to return to the road is i, which is more convenient and natural, and is not easy to make mistakes. It's not that C/C++'s array subscripts start at 0. When we use arrays, we start with elements with subscript 0.
+  
+  
+common problem  
+Question 1: This topic should be read carefully when reading the question. Some students did not see that they could only take the most of the remaining peanuts at a time.Big, but hope to find a combination that can get the most peanuts within the specified time, turning the title into another question.  
+Question 2: Some students did not read the condition that “the number of peanuts without two peanut plants is the same”, so the topic
+It's complicated.  
+Question 3: This topic is based on the assumption that monkeys will not return to the road during the process of taking peanuts. Some students are thinking  
+Is it possible to return to the road in the middle, because the problem does not say that it takes time to move on the road, so it is possible to come out and pick up more peanuts.
